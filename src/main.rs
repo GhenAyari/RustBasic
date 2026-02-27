@@ -37,3 +37,9 @@ fn membuat_shadowing(){
     let nama_tengah = 7;
     println!("nama tengahnya ada {} huruf", nama_tengah);
 }
+
+#[test]
+fn deklarasi_variable(){
+    let age: i32 = 19;
+    println!( "umurnya adalah : {} ", age);
+}

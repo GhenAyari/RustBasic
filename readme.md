@@ -90,3 +90,24 @@ fn membuat_shadowing(){
 <br> output:
 
 ![img_4.png](img_4.png)
+
+---
+
+### Data Type
+
+- Di rust memiliki type data. ada dua subsets tipe data di rust yang pertama adalah <b>scalar<b> dan <b>compound<b>.
+
+- scalar type mempresentasikan single value (nilai tunggal) integer, float, boolean dan char
+
+- compound type mempresentasikan beberapa value (lebih dari satu) dalam satu type seperti tupple dan array
+
+- Sebenarnya tanpa perlu kita deklarasikan rust bisa membaca dan tau tipe datanya. tapi kita masih tetap bisa kalau mau deklarasikan
+
+```
+#[test]
+fn deklarasi_variable(){
+    let age: i32 = 19;
+    println!( "umurnya adalah : {} ", age);
+}
+```
+![img_5.png](img_5.png)
