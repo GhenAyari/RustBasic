@@ -28,3 +28,12 @@ fn variable_mutable(){
     description = "He's ugly ";
     println!( " i hate him because {} ", description );
 }
+
+#[test]
+fn membuat_shadowing(){
+    let nama_tengah = "Gantari";
+    println!("nama tengah {}", nama_tengah);
+
+    let nama_tengah = 7;
+    println!("nama tengahnya ada {} huruf", nama_tengah);
+}
