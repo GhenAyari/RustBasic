@@ -46,5 +46,7 @@ fn deklarasi_variable(){
 
 #[test]
 fn setelah_sekian_lama(){
-    println!("Saya kembali belajar rust hehehe")
+    println!("Saya kembali belajar rust hehehe");
+    let tanggal_kembali: i32 = 21;
+    println!( "tanggal kembali ke rust {}", tanggal_kembali);
 }
