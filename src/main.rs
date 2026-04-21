@@ -43,3 +43,8 @@ fn deklarasi_variable(){
     let age: i32 = 19;
     println!( "umurnya adalah : {} ", age);
 }
+
+#[test]
+fn setelah_sekian_lama(){
+    println!("Saya kembali belajar rust hehehe")
+}
