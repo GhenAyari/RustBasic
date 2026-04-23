@@ -40,8 +40,19 @@ fn membuat_shadowing(){
 
 #[test]
 fn deklarasi_variable(){
-    let age: i32 = 19;
+    let age: i8 = 19;
     println!( "umurnya adalah : {} ", age);
+    let ipk: f32 = 3.85;
+    println!( "ipk adalah : {}", ipk);
+    let jarak_ke_kampus: u16 = 20;
+    println!("jarak ke kampus adalah : {} {}", jarak_ke_kampus, " Km");
+
+    /* perbedaan u dan i adalah jika u angkanya pasti positif dan tidak mungkin negatif dan jika i angkanya bisa negatif dan bisa positif
+    gunakan u jika angkanya atau hasilnya pasti positif dan gunakan i jika ada kemungkinan hasilnya negatif. untuk default dari rustnya sendiri adalah
+    i64. jadi misal tidak mendeklarasikan contoh seperti let umur = 19. itu defaultnya i64. semakin besar bitnya semakin boros memori. Dan untuk float
+    defaultnya adalah f64
+    */
+
 }
 
 #[test]
@@ -49,4 +60,32 @@ fn setelah_sekian_lama(){
     println!("Saya kembali belajar rust hehehe");
     let tanggal_kembali: i32 = 21;
     println!( "tanggal kembali ke rust {}", tanggal_kembali);
+}
+
+#[test]
+fn konversi_tipe_data_number(){
+    let a: i8 = 10;
+    println!("{}", a);
+
+    let b: i16 = a as i16;
+    println!("{}", b);
+
+    let c: u8 = a as u8;
+    println!("{}", c);
+
+    /*
+        Di rust untuk melakukan konversi tipe data number itu menggunakan kata kunci "as".
+     */
+}
+
+#[test]
+fn latihan_tipe_data_number(){
+    let a: u8 = 10;
+    let b: i16 = 30;
+
+    // let c: i16 = a as i16; (bisa menambah variable seperti ini jadi nanti let hasil = b + c;
+    //     println!("hasil adalah {}", hasil); )
+
+    println!("hasil adalah {}", b + a as i16);
+
 }
