@@ -245,3 +245,17 @@ fn test_unit(){
     println!("{:?}", test);
 
 }
+
+#[test]
+fn array(){
+    let array1: [i16; 7] = [1, 2, 3, 4, 7, 9, 11];
+
+    println!("{:?}", array1);
+
+    println!("");
+    let nama: [&str; 3] = ["Ambacong", "Rusdi", "Fuad"];
+    println!("Ketua {} ", nama[1]);
+    println!("Member 1 {} ", nama[0]);
+    println!("Member 2 {} ", nama[2]);
+
+}
