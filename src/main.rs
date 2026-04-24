@@ -133,3 +133,27 @@ fn augmanted_assignments(){
     b %= 2;
     println!("{}", b);
 }
+
+#[test]
+fn boolean(){
+    let a = true;
+    let b: bool = false;
+
+    println!("ini adalah : {}", a);
+    println!("ini adalah salah : {} ", b)
+}
+
+#[test]
+fn comparison_operators(){
+    let hasil: bool = 10 > 30;
+
+    println!("apakah 10 lebih dari 30? {}", hasil);
+
+    let a: u8 = 10;
+    let b: i8 = 15;
+
+    let hasil1 = a <= b as u8;
+
+    println!("apakah a lebih dari b? {}", hasil1);
+}
+
