@@ -157,3 +157,26 @@ fn comparison_operators(){
     println!("apakah a lebih dari b? {}", hasil1);
 }
 
+#[test]
+fn operators_boolean(){
+    /*
+    di operators boolean ada tiga yaitu && adalah dan, || adalah atau, ! adalah kebalikan
+     */
+
+    let absen = 13;
+    let nilai = 70;
+
+    let lulus = absen >= absen;
+    let lulus_nilai = nilai >= nilai;
+
+    let lulus_final = lulus && lulus_nilai;
+    println!("Dia Bagas dinyatakan lulus? {} ", lulus_final);
+
+
+    let lulus = absen < absen;
+    let lulus_nilai = nilai > nilai;
+
+    let lulus_final = lulus && lulus_nilai;
+    println!("Dia Andi dinyatakan dinyatakan? {} ", lulus_final);
+}
+
