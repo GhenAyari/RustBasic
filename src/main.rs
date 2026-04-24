@@ -107,6 +107,29 @@ fn operasi_numerik(){
 
     println!("hasil dari : {} {} ", c as u16 * d as u16, "itulah hasilnya");
 
+}
 
+#[test]
+fn augmanted_assignments(){
+    let mut a = 5;
 
+    println!("{}", a);
+
+    a += 10;
+    println!("{}", a);
+
+    a -= 3;
+    println!("{}", a);
+
+    a *= 10;
+    println!("{}", a);
+
+    a %= 3;
+    println!("{}", a);
+
+    let mut b = 5;
+    println!("{}", b);
+
+    b %= 2;
+    println!("{}", b);
 }
