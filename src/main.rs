@@ -231,3 +231,17 @@ fn tuple(){
     println!("Tahun lahir {} ", tahun_lahir);
 
 }
+
+fn unit(){
+    println!("Ini adalah unit");
+}
+
+#[test]
+fn test_unit(){
+    let hasil = unit();
+    println!("{:?}", hasil);
+
+    let test = ();
+    println!("{:?}", test);
+
+}
