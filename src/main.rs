@@ -89,3 +89,24 @@ fn latihan_tipe_data_number(){
     println!("hasil adalah {}", b + a as i16);
 
 }
+
+#[test]
+fn operasi_numerik(){
+    /*
+    Di rust operasi numerik itu sama dengan bahasa lain. yaitu + untuk tambah, * untuk kali, / untuk bagi, % untuk sisa bagi atau modulus, - untuk kurang
+    */
+
+    let a = 10;
+    let b = 20;
+
+    let hasil = a + b;
+    println!("hasil adalah {}", hasil);
+
+    let c: u8 = 9;
+    let d: i16 = 30;
+
+    println!("hasil dari : {} {} ", c as u16 * d as u16, "itulah hasilnya");
+
+
+
+}
