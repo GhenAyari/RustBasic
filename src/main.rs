@@ -189,3 +189,28 @@ fn tipe_char(){
 
     println!("{}{}{}{}", a, b, c, d);
 }
+
+
+#[test]
+fn tuple(){
+    /*
+     cara penulisan tuple ada banyak contohnya di bawah ini:
+     */
+
+    // Cara 1
+    let data: (&str, u8, u16) = ("Ghendida", 19, 2006);
+    println!("{:?}", data);
+
+    // Cara 2
+    let data_baru = ("Ghendida ", 19, 2006);
+    println!("Nama {} ", data_baru.0);
+    println!("Usia {} ", data_baru.1);
+    println!("Tahun lahir {} ", data_baru.2);
+
+    // Cara 3 menggunakan destructing membongkar tuple jadi variabel terpisah
+    let (nama, umur, tahun_lahir) = data_baru;
+    println!("Nama {} ", nama);
+    println!("Umur saat ini {} ", umur);
+    println!("Tahun lahir {} ", tahun_lahir);
+
+}
