@@ -180,3 +180,12 @@ fn operators_boolean(){
     println!("Dia Andi dinyatakan dinyatakan? {} ", lulus_final);
 }
 
+#[test]
+fn tipe_char(){
+    let a = 'g';
+    let b = 'h';
+    let c = 'e';
+    let d = 'n';
+
+    println!("{}{}{}{}", a, b, c, d);
+}
