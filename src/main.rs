@@ -213,4 +213,21 @@ fn tuple(){
     println!("Umur saat ini {} ", umur);
     println!("Tahun lahir {} ", tahun_lahir);
 
+    // Cara 4 yaitu mutable tuple artinya isinya bisa diubah ubah.
+
+    let mut identitas: (String, i8, i16) = (String::from("Ghendida"), 19, 2006);
+
+    println!("{:?}", identitas);
+
+    identitas.0 = String::from("Ambaaaaa ");
+    identitas.1 = 22;
+    identitas.2 = 2003;
+
+    println!("{:?}", identitas);
+
+    let (nama, umur, tahun_lahir) = identitas;
+    println!("Nama {} ", nama);
+    println!("Umur saat ini {} ", umur);
+    println!("Tahun lahir {} ", tahun_lahir);
+
 }
